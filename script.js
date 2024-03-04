@@ -57,7 +57,10 @@ const reset=()=>{
    turno= true;
    enableBoxes();
    msgcontainer.classList.add("hide");
-     box.style.backgroundColor="white";
+       for (let box of boxes) {
+      box.style.backgroundColor = ""; // Reset background color
+      box.style.color = ""; // Reset text color
+   }
 
 };
 newb.addEventListener("click",reset);
