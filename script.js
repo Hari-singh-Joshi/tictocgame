@@ -57,6 +57,7 @@ const reset=()=>{
    turno= true;
    enableBoxes();
    msgcontainer.classList.add("hide");
+     box.style.backgroundColor="white";
 
 };
 newb.addEventListener("click",reset);
